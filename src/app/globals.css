@@ -12,9 +12,28 @@
 }
 
 :root {
-  background-color: #18181B;
+  background-color: #001113;
 }
 
 body{
   font-family: 'Satoshi', sans-serif;
+}
+
+
+@keyframes levitate {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(4px);
+  }
+  70% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
