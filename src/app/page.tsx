@@ -14,7 +14,7 @@ export default function Home() {
       <p className="text-base md:text-lg text-gray-400 font-medium pt-5">Experience the timeless wisdom of God&apos;s written Word
         with a modern, beautiful, and minimalistic design for an easy-to-use experience</p>
       <div className="mt-5 flex justify-center gap-x-4">
-        <a href="#" className="bg-[#FFD700] text-zinc-950 hover:bg-[#ffd900dd] transition duration-200 flex justify-center items-center px-5 py-2.5 rounded-lg font-bold text-base">Empezar a leer</a>
+        <a href="#" className="bg-[#0073fff2] text-white hover:bg-[#0073ffe3] transition duration-200 flex justify-center items-center px-5 py-2.5 rounded-lg font-bold text-base">Empezar a leer</a>
         <a href="https://github.com/francoogilli/bible" target="_blank" className="bg-zinc-900 hover:bg-zinc-800 transition duration-200 border border-zinc-800 text-zinc-100 flex justify-center items-center gap-x-2.5 px-5 py-2.5 rounded-lg font-semibold text-base"><GitHub />Star on GitHub</a>
       </div>
     </div>
