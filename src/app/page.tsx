@@ -1,4 +1,4 @@
-import Image from "next/image";
+import GitHub from "@/icons/GitHub";
 
 export default function Home() {
   return (
@@ -10,10 +10,15 @@ export default function Home() {
       </div>
 
       <div className="max-w-3xl text-center">
-      <h1 className="text-3xl md:text-5xl font-black text-zinc-100 z-10 mt-8">Free and open source Bible reading app</h1>
+      <h1 className="text-3xl md:text-5xl font-black text-zinc-100 z-10 mt-2">Free and open source Bible reading app</h1>
       <p className="text-base md:text-lg text-gray-400 font-medium pt-5">Experience the timeless wisdom of God&apos;s written Word
   with a modern, beautiful, and minimalistic design for an easy-to-use experience</p>
-
+      <div className="mt-5 flex justify-center gap-x-4">
+        <a href="#" className="bg-white hover:bg-zinc-100 transition duration-200 flex justify-center items-center px-5 py-2.5 rounded-lg font-semibold text-base">Start reading</a>
+        <a href="https://github.com/francoogilli/bible" target="_blank" className="bg-zinc-900 hover:bg-zinc-800 transition duration-200 border border-zinc-800 text-zinc-100 flex justify-center items-center gap-x-2.5 px-5 py-2.5 rounded-lg font-semibold text-base"><GitHub />Star on GitHub</a>
+        
+              
+      </div>
     </div>
     </main>
   );
