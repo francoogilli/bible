@@ -5,8 +5,8 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-start  px-4 md:px-24 relative">
       <div className="relative w-[300px] h-[300px] md:w-[550px] md:h-[550px] ">
         <img src="/Laureles1.png" className="absolute inset-0 w-full h-full" style={{ animation: "levitate 18s ease infinite" }}/>
-        <img src="/Book1.png" className="absolute inset-0 w-full h-full" style={{ animation: "levitate 16s ease infinite" }}/>
-        <img src="/Cruz.png" className="absolute inset-0 w-full h-full" style={{ animation: "levitate 13s ease infinite" }}/>
+        <img src="/Book2.png" className="absolute inset-0 w-full h-full" style={{ animation: "levitate 15s ease infinite" }}/>
+        <img src="/Cruz.png" className="absolute inset-0 w-full h-full" style={{ animation: "levitate 12s ease infinite" }}/>
       </div>
       <h1 className="text-6xl font-extrabold text-white z-10 mt-8">Biblia</h1>
     </main>
