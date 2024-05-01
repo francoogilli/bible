@@ -13,7 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <div className="absolute top-0 z-[-2] h-screen w-full bg-[#001015] bg-[radial-gradient(ellipse_42%_68%_at_50%_-20%,rgba(216,195,135,0.3),rgba(255,255,255,0))] md:bg-[radial-gradient(ellipse_22%_70%_at_50%_-20%,rgba(216,195,135,0.3),rgba(255,255,255,0))]"></div>
+      <div className="absolute top-0 z-[-2] h-screen w-full bg-[#001015] bg-[radial-gradient(ellipse_42%_68%_at_50%_-20%,rgba(216,195,135,0.3),rgba(255,255,255,0))] md:bg-[radial-gradient(ellipse_12%_70%_at_50%_-20%,rgba(216,195,135,0.3),rgba(255,255,255,0))]"></div>
       <body >{children}</body>
     </html>
   );
