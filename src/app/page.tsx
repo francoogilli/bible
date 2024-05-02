@@ -7,6 +7,8 @@ export default function Home() {
         <img src="/Laurel-Tiras.png" className="absolute inset-0 w-full h-full" style={{ animation: "levitate 30s ease infinite" }}/>
         <img src="/Book1.png" className="absolute inset-0 w-full h-full" style={{ animation: "levitate 15s ease infinite" }}/>
         <img src="/Cruz.png" className="absolute inset-0 w-full h-full" style={{ animation: "levitate 12s ease infinite" }}/>
+        <img src="/HojaDerecha.png" className="absolute inset-0 w-full h-full" style={{ animation: "levitate 10s ease infinite" }}/>
+        <img src="/HojaIzquierda.png" className="absolute inset-0 w-full h-full" style={{ animation: "levitate 10s ease infinite" }}/>
       </div>
 
       <div className="max-w-3xl text-center">
