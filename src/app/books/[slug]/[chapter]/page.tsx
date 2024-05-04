@@ -56,14 +56,15 @@ export default async function Page({ params }: Props) {
       <div className="flex flex-row overflow-x-auto mx-auto max-w-screen-md border-b border-zinc-700 top-0 left-0 z-20 gap-2 bg-background py-2">
         {[...Array(bookContent.chapters)].map((_, index) => (
           <Link
-            key={index}
-            href={`/books/${slug}/${index + 1}`}
-            className={`bg-zinc-800 size-10 flex justify-center font-bold items-center rounded-md px-4  py-2 ${
-              Number(chapter) === index + 1 ? 'bg-[#fff] text-black' : ''
-            }`}
-          >
-            {(index + 1).toString().padStart(2, "0")}
-          </Link>
+          key={index}
+          href={`/books/${slug}/${index + 1}`}
+          className={`size-10 flex justify-center font-bold items-center rounded-md px-4 py-2 ${
+            Number(chapter) === index + 1 ? 'bg-[#fff] text-black' : 'bg-zinc-800 text-white'
+          }`}
+        >
+          {(index + 1).toString().padStart(2, "0")}
+        </Link>
+        
         ))}
       </div>
       <div className="mx-auto space-y-5 lg:max-w-screen-md">
