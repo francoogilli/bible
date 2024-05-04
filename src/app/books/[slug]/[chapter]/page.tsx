@@ -72,12 +72,12 @@ export default async function Page({ params }: Props) {
         <div className="space-y-2">
           {chapterContent.verses.map((verse) => (
             <div key={verse.number} className="space-x-2">
-              <span className="text-xs font-bold text-foreground">
+              <span className="text-xs font-extrabold  bg-gradient-to-br from-[#6e6e6e] to-[#2d2c2c] py-0.5 px-1.5 rounded-md">
                 {verse.number}
               </span>
               <p
                 dangerouslySetInnerHTML={{ __html: verse.text }}
-                className="inline lg:text-lg"
+                className="inline text-[#ededed] lg:text-lg"
                 key={verse.number}
               />
             </div>
