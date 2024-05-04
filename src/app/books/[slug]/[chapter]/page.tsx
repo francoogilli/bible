@@ -59,7 +59,7 @@ export default async function Page({ params }: Props) {
             key={index}
             href={`/books/${slug}/${index + 1}`}
             className={`bg-zinc-800 size-10 flex justify-center font-bold items-center rounded-md px-4  py-2 ${
-              Number(chapter) === index + 1 ? 'bg-white text-black' : ''
+              Number(chapter) === index + 1 ? 'bg-[#fff] text-black' : ''
             }`}
           >
             {(index + 1).toString().padStart(2, "0")}
