@@ -9,6 +9,7 @@ import { bibleApiGet } from "@/services/fetchBibleApi"
 
 
 
+
 type Props = {
   params: { slug: string }
 }

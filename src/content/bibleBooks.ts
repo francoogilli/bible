@@ -71,7 +71,7 @@ export const bibleBooks = {
   ],
 };
 
-export const bibleBookAbbrevBySlug = {
+export const bibleBookAbbrevBySlug: { [key: string]: string } = {
   genesis: "gn",
   exodus: "ex",
   leviticus: "lv",
@@ -140,7 +140,7 @@ export const bibleBookAbbrevBySlug = {
   revelation: "re",
 };
 
-export const bibleBookNameBySlug = {
+export const bibleBookNameBySlug: { [key: string]: string } = {
   genesis: "Génesis",
   exodus: "Éxodo",
   leviticus: "Levítico",
