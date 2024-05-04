@@ -68,7 +68,7 @@ export default async function Page({ params }: Props) {
         ))}
       </div>
       <div className="mx-auto space-y-5 lg:max-w-screen-md">
-        <h1 className="scroll-m-20 text-4xl font-extrabold flex justify-center tracking-tight lg:text-5xl">{`${bibleBookNameBySlug[slug]}, Capítulo ${chapter}`}</h1>
+        <h1 className="scroll-m-20 text-4xl font-extrabold flex justify-center tracking-tight lg:text-5xl">{`${bibleBookNameBySlug[slug]} : ${chapter}`}</h1>
         <div className="space-y-2">
           {chapterContent.verses.map((verse) => (
             <div key={verse.number} className="space-x-2">
