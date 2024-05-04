@@ -2,7 +2,10 @@ import GitHub from "@/icons/GitHub";
 
 export default function Home() {
   return (
+    
     <main className="flex min-h-screen flex-col items-center justify-start  px-4 md:px-24 relative">
+        <div className="absolute top-0 z-[-2] h-screen w-full bg-[#001015] bg-[radial-gradient(ellipse_42%_68%_at_50%_-20%,rgba(216,195,135,0.3),rgba(255,255,255,0))] md:bg-[radial-gradient(ellipse_22%_70%_at_50%_-20%,rgba(216,195,135,0.3),rgba(255,255,255,0))]"></div>
+      
       <div className="relative w-[300px] h-[300px] md:w-[450px] md:h-[450px] mt-24 md:mt-0">
         <img src="/Laurel-Tiras.png" className="absolute inset-0 w-full h-full" style={{ animation: "levitate 30s ease infinite" }} draggable="false"/>
         <img src="/Book1.png" className="absolute inset-0 w-full h-full" style={{ animation: "levitate 15s ease infinite" }} draggable="false"/>
