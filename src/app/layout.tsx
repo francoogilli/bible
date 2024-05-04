@@ -18,7 +18,7 @@ export default function RootLayout({
         {/* Aquí van las etiquetas meta, link, etc. */}
       </head>
       <body>
-          <div className="flex justify-center items-center max-w-[80.5rem] mx-auto">
+          <div className="flex justify-center items-center max-w-[81rem] px-4 mx-auto">
             {children}
           </div>
           <SiteFooter />
