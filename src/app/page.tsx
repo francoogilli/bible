@@ -4,11 +4,11 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-start  px-4 md:px-24 relative">
       <div className="relative w-[300px] h-[300px] md:w-[450px] md:h-[450px] mt-24 md:mt-0">
-        <img src="/Laurel-Tiras.png" className="absolute inset-0 w-full h-full" style={{ animation: "levitate 30s ease infinite" }}/>
-        <img src="/Book1.png" className="absolute inset-0 w-full h-full" style={{ animation: "levitate 15s ease infinite" }}/>
-        <img src="/Cruz.png" className="absolute inset-0 w-full h-full" style={{ animation: "levitate 12s ease infinite" }}/>
-        <img src="/HojaDerecha.png" className="absolute inset-0 w-full h-full" style={{ animation: "levitate 10s ease infinite" }}/>
-        <img src="/HojaIzquierda.png" className="absolute inset-0 w-full h-full" style={{ animation: "levitate 9s ease infinite" }}/>
+        <img src="/Laurel-Tiras.png" className="absolute inset-0 w-full h-full" style={{ animation: "levitate 30s ease infinite" }} draggable="false"/>
+        <img src="/Book1.png" className="absolute inset-0 w-full h-full" style={{ animation: "levitate 15s ease infinite" }} draggable="false"/>
+        <img src="/Cruz.png" className="absolute inset-0 w-full h-full" style={{ animation: "levitate 12s ease infinite" }} draggable="false"/>
+        <img src="/HojaDerecha.png" className="absolute inset-0 w-full h-full" style={{ animation: "levitate 10s ease infinite" }} draggable="false"/>
+        <img src="/HojaIzquierda.png" className="absolute inset-0 w-full h-full" style={{ animation: "levitate 9s ease infinite" }} draggable="false"/>
       </div>
 
       <div className="max-w-3xl text-center">
