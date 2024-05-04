@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { librosBiblia } from "@/content/bibleBooks"
+import { bibleBooks  } from "@/content/bibleBooks"
 
 
 export const metadata = {
@@ -14,13 +14,13 @@ export default function BooksPage() {
           Old Testament
         </h1>
         <div className="mx-auto grid w-full grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 2xl:grid-cols-7">
-          {librosBiblia.antiguoTestamento.map((book) => (
+          {bibleBooks .oldTestament.map((book) => (
             <Link
               key={book.slug}
               href={`/books/${book.slug}/1`}
               className="bg-zinc-800 font-medium flex justify-center rounded-lg hover:bg-zinc-800/80 h-10 py-2 px-4"
               >
-              {book.nombre}
+              {book.name}
             </Link>
           ))}
         </div>
@@ -30,13 +30,13 @@ export default function BooksPage() {
           New Testament
         </h1>
         <div className="mx-auto grid w-full grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 2xl:grid-cols-7">
-          {librosBiblia.nuevoTestamento.map((book) => (
+          {bibleBooks .newTestament.map((book) => (
             <Link
               key={book.slug}
               href={`/books/${book.slug}/1`}
               className="bg-zinc-800 font-medium flex justify-center rounded-lg hover:bg-zinc-800/80 h-10 py-2 px-4"
               >
-              {book.nombre}
+              {book.name}
             </Link>
           ))}
         </div>
