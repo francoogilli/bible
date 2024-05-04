@@ -11,7 +11,7 @@ export default function BooksPage() {
     <section className="container text-white my-10 h-full w-full space-y-10">
       <div className="space-y-5">
         <h1 className="scroll-m-20 flex justify-center text-3xl font-extrabold ">
-          Old Testament
+          Antiguo Testamento
         </h1>
         <div className="mx-auto grid w-full grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 2xl:grid-cols-7">
           {bibleBooks .oldTestament.map((book) => (
@@ -27,7 +27,7 @@ export default function BooksPage() {
       </div>
       <div className="space-y-5">
         <h1 className="scroll-m-20 flex justify-center text-3xl font-extrabold ">
-          New Testament
+          Nuevo Testamento
         </h1>
         <div className="mx-auto grid w-full grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 2xl:grid-cols-7">
           {bibleBooks .newTestament.map((book) => (
