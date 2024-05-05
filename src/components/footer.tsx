@@ -4,7 +4,7 @@ export function SiteFooter() {
   return (
     <footer className="sticky bg-[#1b1918] top-0 z-10 w-full border-t border-zinc-800 bg-background">
       <p className="container py-5 text-white text-center text-[15px] leading-loose">
-        Build by{" "}
+        Hecho por{" "}
         
         <Link
           href="https://francogilli.vercel.app/"
@@ -14,7 +14,7 @@ export function SiteFooter() {
         >
           Franco Gilli
         </Link>
-        . Inspired by{" "}
+        . Inspirado en{" "}
         <Link
           href="https://www.holybible.dev/"
           className="font-semibold hover:underline underline-offset-4"
