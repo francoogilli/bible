@@ -65,7 +65,7 @@ const SelectDropdown: React.FC<SelectDropdownProps> = ({ options, selectedChapte
 
         {isMenuOpen && (
           <ul
-            className="absolute z-10 mt-1 max-h-64 w-full overflow-auto border border-[#2d2d2d] rounded-xl text-white bg-[#09090B] py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm"
+            className="absolute z-10 mt-1 max-h-72 w-full overflow-auto border border-[#2d2d2d] rounded-xl text-white bg-[#09090B] py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm"
             tabIndex={-1}
             role="listbox"
             aria-labelledby="listbox-label"
