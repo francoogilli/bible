@@ -13,16 +13,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <head>
-        {/* Aquí van las etiquetas meta, link, etc. */}
-      </head>
-      <body>
-          <div className="flex justify-center items-center max-w-[81rem] px-4 mx-auto">
-            {children}
-          </div>
-          <SiteFooter />
-      </body>
-    </html>
+    <html lang="en" >
+        <head />
+        <body
+          className="min-h-screen bg-background  antialiased"
+        >
+            <div className="relative flex min-h-screen max-w-[81rem] px-4 mx-auto flex-col">
+              <div className="flex-1">{children}</div>
+              <SiteFooter />
+            </div>          
+        </body>
+      </html>
   );
 }
