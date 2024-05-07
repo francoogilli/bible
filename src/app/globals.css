@@ -37,3 +37,18 @@ body{
     transform: translateY(0);
   }
 }
+::-webkit-scrollbar {
+  width: .75rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #dcdcdc2b; /* Cursor color (thumbs)*/
+}
+::-webkit-scrollbar-thumb:active{
+  background-color: #67666675; /* Cursor color (thumbs)*/
+
+}
+
+::-webkit-scrollbar-track {
+  background-color:#4242422b; /* Scroll bar background color*/
+}
