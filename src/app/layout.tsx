@@ -20,8 +20,8 @@ export default function RootLayout({
         >
             <div className="relative flex min-h-screen max-w-[81rem] px-4 mx-auto flex-col">
               <div className="flex-1">{children}</div>
-              <SiteFooter />
             </div>          
+              <SiteFooter />
         </body>
       </html>
   );
