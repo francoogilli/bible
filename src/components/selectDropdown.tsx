@@ -43,7 +43,7 @@ const SelectDropdown: React.FC<SelectDropdownProps> = ({ options, selectedChapte
             {selectedOption && (
               <img src={selectedOption.image} alt="" className="h-5 w-5 flex-shrink-0 rounded-full" />
             )}
-            <span className="ml-3 block truncate">{selectedOption ? `Capitulo ${selectedOption.chapterNumber}` : 'Elige un capitulo'}</span>
+            <span className="ml-3 block text-base truncate">{selectedOption ? `Capitulo ${selectedOption.chapterNumber}` : 'Elige un capitulo'}</span>
           </span>
           <span className="pointer-events-none absolute inset-y-0 right-0 ml-3 flex items-center pr-2">
             <svg
@@ -65,7 +65,7 @@ const SelectDropdown: React.FC<SelectDropdownProps> = ({ options, selectedChapte
 
         {isMenuOpen && (
           <ul
-            className="absolute z-10 mt-1 max-h-56 w-full overflow-auto border border-[#2d2d2d] rounded-xl text-white bg-[#09090B] py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm"
+            className="absolute z-10 mt-1 max-h-60 w-full overflow-auto border border-[#2d2d2d] rounded-xl text-white bg-[#09090B] py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm"
             tabIndex={-1}
             role="listbox"
             aria-labelledby="listbox-label"
@@ -86,7 +86,7 @@ const SelectDropdown: React.FC<SelectDropdownProps> = ({ options, selectedChapte
                     alt=""
                     className="h-5 w-5 flex-shrink-0 rounded-full"
                   />
-                  <span className="font-normal ml-3 block truncate">{`Capitulo ${option.chapterNumber}`}</span>
+                  <span className="font-normal text-base ml-3.5 block truncate">{`Capitulo ${option.chapterNumber}`}</span>
                 </div>
 
                 {option.chapterNumber === selectedChapter && (

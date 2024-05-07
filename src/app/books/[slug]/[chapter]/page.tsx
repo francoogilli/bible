@@ -70,7 +70,7 @@ export default async function Page({ params }: Props) {
         ))}
         
       </div> */}
-      <div className="max-w-52 mx-auto">
+      <div className="max-w-64 mx-auto">
           <SelectDropdown options={options} selectedChapter={Number(chapter)} />
         </div>
       <div className="mx-auto space-y-5 lg:max-w-screen-md">
