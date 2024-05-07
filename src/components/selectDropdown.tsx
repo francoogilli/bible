@@ -41,7 +41,7 @@ const SelectDropdown: React.FC<SelectDropdownProps> = ({ options, selectedChapte
         >
           <span className="flex items-center">
             {selectedOption && (
-              <img src={selectedOption.image} alt="" className="h-5 w-5 flex-shrink-0 rounded-full" />
+              <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  className="size-5"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" /><path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" /><path d="M3 6l0 13" /><path d="M12 6l0 13" /><path d="M21 6l0 13" /></svg>
             )}
             <span className="ml-3 block text-base truncate">{selectedOption ? `Capitulo ${selectedOption.chapterNumber}` : 'Elige un capitulo'}</span>
           </span>
@@ -65,7 +65,7 @@ const SelectDropdown: React.FC<SelectDropdownProps> = ({ options, selectedChapte
 
         {isMenuOpen && (
           <ul
-            className="absolute z-10 mt-1 max-h-60 w-full overflow-auto border border-[#2d2d2d] rounded-xl text-white bg-[#09090B] py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm"
+            className="absolute z-10 mt-1 max-h-64 w-full overflow-auto border border-[#2d2d2d] rounded-xl text-white bg-[#09090B] py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm"
             tabIndex={-1}
             role="listbox"
             aria-labelledby="listbox-label"
@@ -81,11 +81,7 @@ const SelectDropdown: React.FC<SelectDropdownProps> = ({ options, selectedChapte
                 onClick={() => handleOptionSelect(option)}
               >
                 <div className="flex items-center">
-                  <img
-                    src={option.image}
-                    alt=""
-                    className="h-5 w-5 flex-shrink-0 rounded-full"
-                  />
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  className="size-5"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" /><path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" /><path d="M3 6l0 13" /><path d="M12 6l0 13" /><path d="M21 6l0 13" /></svg>
                   <span className="font-normal text-base ml-3.5 block truncate">{`Capitulo ${option.chapterNumber}`}</span>
                 </div>
 
