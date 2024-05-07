@@ -8,7 +8,7 @@ export function SiteFooter() {
         
         <Link
           href="https://francogilli.vercel.app/"
-          className="font-bold text-[#efefff] hover:underline underline-offset-4"
+          className="font-bold text-[#dcdcdc] hover:underline underline-offset-4"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -17,7 +17,7 @@ export function SiteFooter() {
         . Inspirado en{" "}
         <Link
           href="https://www.holybible.dev/"
-          className="font-bold text-[#efefff] hover:underline underline-offset-4"
+          className="font-bold text-[#dcdcdc] hover:underline underline-offset-4"
           target="_blank"
           rel="noopener noreferrer"
         >
