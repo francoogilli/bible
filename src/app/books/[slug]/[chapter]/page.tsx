@@ -74,11 +74,11 @@ export default async function Page({ params }: Props) {
           <SelectDropdown options={options} selectedChapter={Number(chapter)} />
         </div>
       <div className="mx-auto space-y-5 lg:max-w-screen-md">
-        <h1 className="scroll-m-20 text-4xl font-black text-[#3ff7b1] flex justify-center tracking-tight lg:text-5xl">{`${bibleBookNameBySlug[slug]} : ${chapter}`}</h1>
+        <h1 className="scroll-m-20 text-5xl pb-2  font-black text-[#dcdcdc] flex justify-center tracking-tight lg:text-[3.37rem]">{`${bibleBookNameBySlug[slug]} : ${chapter}`}</h1>
         <div className="space-y-2">
           {chapterContent.verses.map((verse) => (
             <div key={verse.number} className="space-x-2">
-              <span className="text-xs font-extrabold text-[#7cffc0]  bg-gradient-to-br from-[#5e5d5dcb] to-[#2d2c2c] py-0.5 px-1.5 rounded-md">
+              <span className="text-xs font-black text-[#dbdbdb]  bg-gradient-to-br from-[#3b3b3bcb] to-[#1c1c1c] py-0.5 px-1.5 rounded-md">
                 {verse.number}
               </span>
               <p
