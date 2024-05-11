@@ -15,9 +15,8 @@ export default function Home() {
       </div>
 
       <div className="max-w-3xl text-center">
-      <h1 className="text-3xl md:text-5xl font-black text-zinc-100 z-10 mt-2">Free and open source Bible reading app</h1>
-      <p className="text-base md:text-lg text-gray-400 font-medium pt-5">Experience the timeless wisdom of God&apos;s written Word
-        with a modern, beautiful, and minimalistic design for an easy-to-use experience</p>
+        <h1 className="text-3xl md:text-5xl font-black text-zinc-100 z-10 mt-2">Descubrí la Biblia de forma gratuita en Español</h1>
+      <p className="text-base md:text-lg text-gray-400 font-medium pt-5">Explora las Sagradas Escrituras sin costo: Descubre la Palabra sin coste alguno. Si queres colaborar al proyecto, podes hacerlo en el repositorio de GitHub.</p>
       <div className="mt-5 flex justify-center gap-x-4">
           <a href="/books" className="bg-[#0073fff2] text-white hover:bg-[#0073ffe3] transition duration-200 flex justify-center items-center px-5 py-2.5 rounded-xl font-bold text-base md:hidden">Empezar</a>
           <a href="/books" className="bg-[#0073fff2] text-white hover:bg-[#0073ffe3] transition duration-200  justify-center items-center px-5 py-2.5 rounded-xl font-bold text-base hidden md:flex">Empezar a leer</a>
