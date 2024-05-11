@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 interface Option {
   bookSlug: string;
@@ -15,6 +15,15 @@ interface SelectDropdownProps {
 const SelectDropdown: React.FC<SelectDropdownProps> = ({ options, selectedChapter }) => {
   const [selectedOption, setSelectedOption] = useState<Option | null>(null);
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (selectedChapter !== undefined) {
+      const foundOption = options.find(option => option.chapterNumber === selectedChapter);
+      if (foundOption) {
+        setSelectedOption(foundOption);
+      }
+    }
+  }, [selectedChapter, options]);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -41,7 +50,7 @@ const SelectDropdown: React.FC<SelectDropdownProps> = ({ options, selectedChapte
         >
           <span className="flex items-center">
             {selectedOption && (
-              <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  className="size-5"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" /><path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" /><path d="M3 6l0 13" /><path d="M12 6l0 13" /><path d="M21 6l0 13" /></svg>
+              <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth="2"  strokeLinecap="round"  strokeLinejoin="round"  className="size-5"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" /><path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" /><path d="M3 6l0 13" /><path d="M12 6l0 13" /><path d="M21 6l0 13" /></svg>
             )}
             <span className="ml-3 block text-base truncate">{selectedOption ? `Capitulo ${selectedOption.chapterNumber}` : 'Elige un capitulo'}</span>
           </span>
@@ -81,7 +90,7 @@ const SelectDropdown: React.FC<SelectDropdownProps> = ({ options, selectedChapte
                 onClick={() => handleOptionSelect(option)}
               >
                 <div className="flex items-center">
-                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  className="size-5"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" /><path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" /><path d="M3 6l0 13" /><path d="M12 6l0 13" /><path d="M21 6l0 13" /></svg>
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth="2"  strokeLinecap="round"  strokeLinejoin="round"  className="size-5"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" /><path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" /><path d="M3 6l0 13" /><path d="M12 6l0 13" /><path d="M21 6l0 13" /></svg>
                   <span className="font-normal text-base ml-3.5 block truncate">{`Capitulo ${option.chapterNumber}`}</span>
                 </div>
 
